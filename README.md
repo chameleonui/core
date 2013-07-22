@@ -19,18 +19,24 @@ You can disable its features with following "Use flags":
 
 ```
 // All flags are enabled (true) by default
+
 // Styles for normalization, *, <html> and <body> tags
 use-core-html = true|false;
+
 // Styles for <a> tag      
-use-core-link = true;       
+use-core-link = true|false;       
+
 // Styles for <hr /> tag
-use-core-hr = true;
+use-core-hr = true|false;
+
 // Basic reposivnes of <img /> tag
-use-core-image = true;
+use-core-image = true|false;
+
 // Visibility classes: .hidden/.is-hidden, .vhidden, .invisible
-use-core-visibility = true; 
+use-core-visibility = true|false; 
+
 // Float clases: .float-left, .float-right, .float-ceter
-use-core-float = true;
+use-core-float = true|false;
 ``` 
 
 ## Author(s)
