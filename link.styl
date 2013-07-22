@@ -1,0 +1,51 @@
+// =============================================================================
+// Basic Link styles
+// =============================================================================
+
+
+// Variables
+// =============================================================================
+link-color ?= #1e87eb;
+link-text-decoration ?= none;
+
+link-visited-color ?= darken(link-color, 20%);
+link-visited-text-decoration ?= link-text-decoration;
+
+link-hover-color ?= lighten(link-color, 20%);
+link-hover-text-decoration ?= underline;
+
+// Styles
+// =============================================================================
+core-link(){
+    // Order L.V.H.F.A. matters
+    // http://www.456bereastreet.com/archive/200811/the_order_of_link_pseudo-classes_matters/
+    a {
+        color: link-color;
+        text-decoration: link-text-decoration;
+        background: transparent;
+
+        &:link {
+            color: link-color;
+            text-decoration: link-text-decoration;
+        }
+
+        &:visited {
+            color: link-visited-color;
+            text-decoration: link-visited-text-decoration;
+        }
+
+        &:hover {
+            color: link-hover-color;
+            text-decoration: link-hover-text-decoration;
+        }
+
+        &:focus {
+            outline: thin dotted;
+        }
+
+        &:hover,
+        &:active {
+            outline: 0;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+// =============================================================================
+// Horizontal ruler
+// =============================================================================
+
+
+// Variables
+// =============================================================================
+hr-boder-color ?= red;
+hr-boder-style ?= solid;
+hr-boder-width ?= 1px 0 0;
+hr-margin ?= 1 0;
+
+
+// Mixin
+// =============================================================================
+core-hr(){
+    hr { 
+        vendors(box-sizing, content-box, moz webkit);
+        clear: both;
+        margin: hr-margin;
+        height: 0;
+        boder-color:  hr-boder-color;
+        border-style: hr-boder-style;
+        border-width: hr-boder-width;
+    }
+}

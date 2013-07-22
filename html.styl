@@ -1,0 +1,93 @@
+// =============================================================================
+// Basic HTML styles
+// =============================================================================
+
+
+// Variables
+// =============================================================================
+html-font-weight ?= 400;
+html-font-size ?= 10px;
+html-line-height ?= 1.5;
+html-font-family ?= "Helvetica Neue", Helvetica, Arial, sans-serif;
+html-color ?= #000;
+html-bg-color ?= #fff;
+body-font-size ?= 16px;
+selection-color ?= #fff;
+selection-bg-color ?= #3180bc;
+
+
+// Mixin
+// =============================================================================
+html-selection(){
+    background: selection-bg-color;
+    color: selection-color;
+    text-shadow: none;  
+}
+
+// =============================================================================
+core-html(){
+
+    // Correct `block` display not defined in IE 8/9.
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section,
+    summary {
+        display: block;
+    }
+
+    // Correct `inline-block` display not defined in IE 8/9.
+    audio,
+    canvas,
+    video {
+        display: inline-block;
+    }
+
+    // Prevent modern browsers from displaying `audio` without controls.
+    // Remove excess height in iOS 5 devices.
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+
+    // Address `[hidden]` styling not present in IE 8/9.
+    // Hide the `template` element in IE, Safari, and Firefox < 22.
+    [hidden],
+    template {
+        display: none;
+    }
+
+    // ========================================================================
+    
+    * {
+        vendors(box-sizing, border-box, moz webkit);
+    }
+
+    html {
+        font: html-font-weight html-font-size/html-line-height html-font-family;
+        color: html-color;
+        background-color: html-bg-color;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        font-size: body;
+    }
+    
+    ::-moz-selection {
+        html-selection();
+    }
+
+    ::selection {
+        html-selection();
+    }
+}

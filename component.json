@@ -1,0 +1,21 @@
+{
+  "name": "core",
+  "repo": "chameleonui/core",
+  "description": "Chameleon UI core features",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [],
+  "development": {},
+  "dependencies": {
+    "chameleonui/utils": "*"
+  },
+  "styles": [
+    "html.styl",
+    "link.styl",
+    "hr.styl",
+    "image.styl",
+    "visibility.styl",
+    "float.styl",
+    "core.styl"
+  ]
+}

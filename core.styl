@@ -1,0 +1,26 @@
+// =============================================================================
+// Chameleon Core
+// =============================================================================
+
+
+// Use flags
+// =============================================================================
+use-core-html ?= true;
+use-core-link ?= true;
+use-core-hr ?= true;
+use-core-image ?= true; 
+use-core-visibility ?= true;
+use-core-float ?= true;
+
+
+// Mixin
+// =============================================================================
+core(){
+    core-normalize() if use-core-normalize;
+    core-html() if use-core-html;
+    core-link() if use-core-link;
+    core-hr() if use-core-hr;
+    core-image() if use-core-image;
+    core-visibility() if use-core-visibility;
+    core-float() if use-core-float;
+}
