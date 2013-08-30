@@ -1,3 +1,5 @@
 local
 components
 build
+node_modules
+example.css

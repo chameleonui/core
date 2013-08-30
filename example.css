@@ -1,0 +1,170 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font: 400 10px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+::-moz-selection {
+  background: #3180bc;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #3180bc;
+  color: #fff;
+  text-shadow: none;
+}
+a {
+  color: #1e87eb;
+  text-decoration: none;
+  background: transparent;
+}
+a:link {
+  color: #1e87eb;
+  text-decoration: none;
+}
+a:visited {
+  color: #116cc3;
+  text-decoration: none;
+}
+a:hover {
+  color: #4b9fef;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  clear: both;
+  margin: 24px 0;
+  margin: 2.4rem 0;
+  height: 0;
+  boder-color: #f00;
+  border-style: solid;
+  border-width: 1px 0 0;
+}
+img {
+  max-width: 100%;
+}
+.invisible {
+  visibility: hidden;
+}
+.is-hidden,
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.vhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.vhidden.focusable:active,
+.vhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-center {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen {
+  .hand-float-left {
+    float: left;
+  }
+  .hand-float-right {
+    float: right;
+  }
+  .hand-float-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 40em) {
+  .lap-float-left {
+    float: left;
+  }
+  .lap-float-right {
+    float: right;
+  }
+  .lap-float-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 55em) {
+  .desk-float-left {
+    float: left;
+  }
+  .desk-float-right {
+    float: right;
+  }
+  .desk-float-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

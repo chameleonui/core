@@ -2,26 +2,65 @@
 // Float helpers
 // =============================================================================
 
+// Variables
+// =============================================================================
+
+// Set grid variables to null if not defined
+grid-hand-class ?= null;
+grid-lap-class ?= null;
+grid-desk-class ?= null;
+
+grid-lap-start ?= null; 
+grid-desk-start ?= null;
+
+grid-hand-up-media ?= null;
+grid-lap-up-media ?= null;
+grid-desk-up-media ?= null;
 
 // Mixin
 // =============================================================================
-core-float(){
-    .float-left,
-    .float-right,
-    .float-center {
-        display: block;
+
+core-float-factory(prefix = null){
+    if (prefix != null) {
+        prefix = prefix + '-';
     }
 
-    .float-left {
+    .{prefix}float-left {
         float: left;
     }
 
-    .float-right {
+    .{prefix}float-right {
         float: right;
     }
 
-    .float-center {
+    .{prefix}float-center {
+        float: none;
         margin-left: auto;
         margin-right: auto;
     }
 }
+ 
+// =============================================================================
+
+core-float(){
+    core-float-factory();
+
+    if (grid-hand-up-media != null && grid-hand-class != null) {
+        @media grid-hand-up-media {
+            core-float-factory(grid-hand-class);
+        }
+    }
+
+    if (grid-lap-up-media != null && grid-lap-class != null && grid-lap-start != null) {
+        @media grid-lap-up-media {
+            core-float-factory(grid-lap-class);
+        }
+    }
+
+    if (grid-desk-up-media != null && grid-desk-class != null && grid-desk-start != null) {
+        @media grid-desk-up-media {
+            core-float-factory(grid-desk-class);
+        }
+    }
+}
+
