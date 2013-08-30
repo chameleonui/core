@@ -5,6 +5,9 @@ build: components core.styl
 components: component.json
 	@component install --dev
 
+example: components example.styl
+	stylus example.styl
+
 clean:
 	rm -fr build components
 
