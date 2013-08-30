@@ -1,3 +1,7 @@
+### v1.1.1
+
+- Added !important to float-center float property
+
 ### v1.1.0
 
 - Added resposive variants to floats
