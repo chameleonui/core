@@ -1,3 +1,7 @@
+### v1.1.2
+
+- Fixed conflit with grid-responsive variables
+
 ### v1.1.1
 
 - Added !important to float-center float property
