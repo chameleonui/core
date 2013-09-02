@@ -1,3 +1,8 @@
+### v1.1.3
+
+- Fixed typo in HR border color
+- Removed ::-moz-selection
+
 ### v1.1.2
 
 - Fixed conflit with grid-responsive variables
