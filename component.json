@@ -2,20 +2,20 @@
   "name": "core",
   "repo": "chameleonui/core",
   "description": "Chameleon UI core features",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "license": "MIT",
   "keywords": [],
   "development": {},
   "dependencies": {
-    "chameleonui/utils": "*"
+    "chameleonui/utils": "1.1.0"
   },
   "styles": [
-    "html.styl",
-    "link.styl",
-    "hr.styl",
-    "image.styl",
-    "visibility.styl",
-    "float.styl",
-    "core.styl"
+    "stylus/html.styl",
+    "stylus/link.styl",
+    "stylus/hr.styl",
+    "stylus/image.styl",
+    "stylus/visibility.styl",
+    "stylus/float.styl",
+    "stylus/core.styl"
   ]
 }
