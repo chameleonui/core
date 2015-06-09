@@ -3,6 +3,7 @@
 – updated dependency version
 - fixed used `_vendors` mixin
 - stylus files moved to subfolder
+- added `chameleonui/css3` dependency for `box-sizing` used on `<hr>`
 
 ### v1.1.3
 
