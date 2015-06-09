@@ -1,3 +1,9 @@
+### v1.2.0
+
+– updated dependency version
+- fixed used `_vendors` mixin
+- stylus files moved to subfolder
+
 ### v1.1.3
 
 - Fixed typo in HR border color
