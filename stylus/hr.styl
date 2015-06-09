@@ -15,11 +15,11 @@ hr-margin ?= 1 0;
 // =============================================================================
 core-hr(){
     hr {
-        _vendors(box-sizing, content-box, moz webkit);
+        box-sizing: content-box;
         clear: both;
         margin: hr-margin;
         height: 0;
-        border-color:  hr-boder-color;
+        border-color: hr-boder-color;
         border-style: hr-boder-style;
         border-width: hr-boder-width;
     }
