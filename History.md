@@ -1,3 +1,7 @@
+### v1.2.1
+
+– fixed box-sizing in `html.styl`
+
 ### v1.2.0
 
 – updated dependency version

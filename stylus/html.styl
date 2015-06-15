@@ -21,7 +21,7 @@ selection-bg-color ?= #3180bc;
 html-selection(){
     background: selection-bg-color;
     color: selection-color;
-    text-shadow: none;  
+    text-shadow: none;
 }
 
 // =============================================================================
@@ -65,15 +65,16 @@ core-html(){
     }
 
     // ========================================================================
-    
-    * {
-        vendors(box-sizing, border-box, moz webkit);
-    }
 
     html {
         font: html-font-weight html-font-size/html-line-height html-font-family;
         color: html-color;
         background-color: html-bg-color;
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
     }
 
     body {
@@ -82,7 +83,7 @@ core-html(){
         padding: 0;
         font-size: body;
     }
-    
+
     ::selection {
         html-selection();
     }
